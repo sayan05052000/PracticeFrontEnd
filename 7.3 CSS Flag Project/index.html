@@ -1,28 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Flag Project</title>
+    <style>
+      /* Write your CSS Code here */
+      .flag {
+        height: 400px;
+        width: 600px;
+        background-color: red;
+        border: 10px solid white;
+        border-width: 3px 10px 10px 3px;
+        position: relative;
+        top: 55px;
+        left: 10px;
+      }
+      div.flag > p {
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        margin: 0px;
+      }
+      div.flag > div {
+        background-color: rgb(20, 20, 112);
+        width: 600px;
+        height: 200px;
+        position: absolute;
+        top: 100px;
+      }
+      div.flag > div > div {
+        background-color: white;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        left: 250px;
+        margin: 0px;
+      }
+      div.flag > div > div > p {
+        color: black;
+        font-size: 40px;
+        text-align: center;
+        margin: 0px;
+      }
+      body {
+        background-color: black;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>CSS Flag Project</title>
-  <style>
-    /* Write your CSS Code here */
-    .flag{
-      height:600px;
-      width: 900px;
-      background-color: red;
-      border: 10px solid white;
-      border-width: 5px 10px 10px 5px;
-      position: relative;
-      top:50px;
-      left: 40px;
-    }
-    body{
-      background-color: black;
-    }
-  </style>
-</head>
-
-<!-- 
+  <!-- 
   IMPORTANT! Do not change any HTML
 Don't add any classes/ids/elements 
 Use what you know about combining selectors 
@@ -32,15 +60,14 @@ Hint 2: You can use CSS inspection to get the colors from
 https://appbrewery.github.io/flag-of-laos/
 -->
 
-<body>
-  <div class="flag">
-    <p>The Flag</p>
-    <div>
+  <body>
+    <div class="flag">
+      <p>The Flag</p>
       <div>
-        <p>of Laos</p>
+        <div>
+          <p>of Laos</p>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

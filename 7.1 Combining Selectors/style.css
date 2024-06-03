@@ -1,0 +1,13 @@
+/* Write your code here: */
+h1,h2{
+    color: blueviolet;
+}
+.box > .done{
+    color: firebrick;
+}
+.list li{
+    color: blue;
+}
+li.done{
+    color:seagreen;
+}
